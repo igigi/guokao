@@ -11,7 +11,7 @@ task :xizang_scrape => :environment do
     article_title = page.css("div.content h2").text
     article_timestamp = page.css("div.content h3 span").text
     article_origin = page.css("div.content h3 strong").text
-    Article.find_or_create_by(title: article_title, stamp: article_timestamp, origin: article_origin, url: article_url)
+    Article.find_or_create_by(title: article_title, stamp: article_timestamp, origin: article_origin, url: article_url, province: "xizang")
   end
 end
 

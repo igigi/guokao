@@ -45,4 +45,6 @@ group :development, :test do
 end
 
 gem 'upton'
+gem 'active_model_serializers', "~> 0.8.3"
+gem 'kaminari'
 #gem 'rails_12factor', group: :production
